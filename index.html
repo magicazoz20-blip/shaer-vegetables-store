@@ -40,9 +40,9 @@ const products=[
  {id:'apple',name:'تفاح أحمر',category:'فواكه',unit:'للكيلو',price:10,trend:'قد ينخفض مع الموسم',emoji:'🍎',photo:'photo-1560806887-1e4cd0b6cbd6'},
  {id:'banana',name:'موز',category:'فواكه',unit:'للكيلو',price:6.5,trend:'السعر مستقر اليوم',emoji:'🍌',photo:'photo-1571771894821-ce9b6c11b08e'},
  {id:'mango',name:'مانجو موسمي',category:'فواكه',unit:'للكيلو',price:12,trend:'عرض اليوم',old:15,emoji:'🥭',photo:'photo-1553279768-865429fa0078'},
- {id:'sukkari',name:'تمر سكري',category:'تمور',unit:'للكيلو',price:28,trend:'السعر مستقر اليوم',emoji:'🌴',photo:'photo-1603833665858-e61d17a86224'},
- {id:'khalas',name:'تمر خلاص',category:'تمور',unit:'للكيلو',price:24,trend:'يتغير حسب الموسم',emoji:'🌴',photo:'photo-1590080877777-b7d6c3f2a84f'},
- {id:'medjool',name:'تمر مجدول',category:'تمور',unit:'للكيلو',price:36,trend:'السعر مستقر اليوم',emoji:'🌴',photo:'photo-1601493700631-2b16ec4b4716'},
+ {id:'sukkari',name:'تمر سكري',category:'تمور',unit:'للكيلو',price:28,trend:'السعر مستقر اليوم',emoji:'🌴',photo:'photo-1648178630847-b857b1a6f45d'},
+ {id:'khalas',name:'تمر خلاص',category:'تمور',unit:'للكيلو',price:24,trend:'يتغير حسب الموسم',emoji:'🌴',photo:'photo-1648178630847-b857b1a6f45d'},
+ {id:'medjool',name:'تمر مجدول',category:'تمور',unit:'للكيلو',price:36,trend:'السعر مستقر اليوم',emoji:'🌴',photo:'photo-1648178630847-b857b1a6f45d'},
  {id:'datebox',name:'علبة تمر فاخرة',category:'تمور',unit:'لـ 500 غرام',price:22,trend:'عرض اليوم',old:26,emoji:'🎁',photo:'photo-1611080626919-7cf5a9dbab5b'},
  {id:'carrot',name:'جزر',category:'خضروات',unit:'للكيلو',price:5,emoji:'🥕'},
  {id:'cabbage',name:'ملفوف أبيض',category:'خضروات',unit:'للحبة',price:6,emoji:'🥬'},
@@ -115,7 +115,7 @@ const itemPhotos={
  'red-grapes':'photo-1537640538966-79f369143f8f','green-grapes':'photo-1537640538966-79f369143f8f',kiwi:'photo-1585059895524-72359e06133a',
  pear:'photo-1490474418585-ba9bad8fd0ea',pomegranate:'photo-1547514701-42782101795e',peach:'photo-1553279768-865429fa0078',apricot:'photo-1553279768-865429fa0078',
  cantaloupe:'photo-1563114773-84221bd62daa',blueberry:'photo-1498557850523-fd3d118b962e',papaya:'photo-1553279768-865429fa0078',guava:'photo-1490474418585-ba9bad8fd0ea',fig:'photo-1490474418585-ba9bad8fd0ea',coconut:'photo-1550258987-190a2d41a8ba',
- ajwa:'photo-1590080877777-b7d6c3f2a84f',mabroom:'photo-1601493700631-2b16ec4b4716',safawi:'photo-1603833665858-e61d17a86224',anbara:'photo-1601493700631-2b16ec4b4716',sagai:'photo-1590080877777-b7d6c3f2a84f',barhi:'photo-1603833665858-e61d17a86224',khudri:'photo-1603833665858-e61d17a86224',shishi:'photo-1590080877777-b7d6c3f2a84f',shalabi:'photo-1601493700631-2b16ec4b4716',wanan:'photo-1590080877777-b7d6c3f2a84f','sukkari-rutab':'photo-1603833665858-e61d17a86224','khalas-rutab':'photo-1601493700631-2b16ec4b4716'
+ ajwa:'photo-1648178630847-b857b1a6f45d',mabroom:'photo-1648178630847-b857b1a6f45d',safawi:'photo-1648178630847-b857b1a6f45d',anbara:'photo-1648178630847-b857b1a6f45d',sagai:'photo-1648178630847-b857b1a6f45d',barhi:'photo-1648178630847-b857b1a6f45d',khudri:'photo-1648178630847-b857b1a6f45d',shishi:'photo-1648178630847-b857b1a6f45d',shalabi:'photo-1648178630847-b857b1a6f45d',wanan:'photo-1648178630847-b857b1a6f45d','sukkari-rutab':'photo-1648178630847-b857b1a6f45d','khalas-rutab':'photo-1648178630847-b857b1a6f45d'
 };
 products.forEach(p=>{if(!p.photo)p.photo=itemPhotos[p.id]||'photo-1542838132-92c53300491e'});
 const basket=(()=>{try{return new Map(JSON.parse(localStorage.getItem('shaer-cart')||'[]'))}catch(e){return new Map()}})();let activeFilter='الكل';
